@@ -8,8 +8,6 @@ import { createConnection } from "typeorm";
 import user from "./routes/User";
 import auth from "./routes/Auth";
 
-console.log(__dirname);
-
 const app: express.Express = express();
 const port: string = process.env.PORT || "8000";
 
@@ -19,10 +17,6 @@ app.use(cookieParser());
 
 app.use("/user", user);
 app.use("/auth", auth);
-
-app.get("/", (req: express.Request, res: express.Response) => {
-    res.send("Hello World!");
-});
 
 createConnection();
 
