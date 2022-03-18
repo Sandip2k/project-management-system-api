@@ -38,8 +38,6 @@ export default class UserController {
         try {
             const payload: CreateUserInput = req.body;
 
-            console.log(payload);
-
             const createUserResult = await this.userService.createUser(payload);
 
             if (!createUserResult) res.sendStatus(400);

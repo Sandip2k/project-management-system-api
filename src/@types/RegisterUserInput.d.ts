@@ -1,4 +1,4 @@
-export default interface LoginUserInput {
+export default interface RegisterUserInput {
     firstName: string;
     lastName: string;
     email: string;

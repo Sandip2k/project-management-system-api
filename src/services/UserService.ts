@@ -1,5 +1,4 @@
 import { Role } from "../models/User";
-import { validate } from "class-validator";
 import { Service } from "typedi";
 import { getRepository } from "typeorm";
 import { User } from "../models/User";

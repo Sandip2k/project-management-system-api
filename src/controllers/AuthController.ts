@@ -10,7 +10,6 @@ import LoginResponse from "../@types/LoginResponse";
 import LoginUserInput from "../@types/LoginUserInput";
 import jwt from "jsonwebtoken";
 import client from "../config/redis";
-
 import RegisterUserInput from "src/@types/RegisterUserInput";
 
 @Service()
